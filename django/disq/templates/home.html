@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <style>
+    .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+    </style>
+    <title>
+        Hello
+    </title>
+</head>
+<body>
+    <h2>For viewing graph:</h2>
+    <form action="graph" method="Post">
+        {%csrf_token%}
+    <button style="width: 100px; height: 50px;" type="submit">Graph</button>
+    </form>
+    <h2>For viewing Predictions:</h2>
+    <form action="predict" method="Post">
+        {%csrf_token%}
+    <button style="width: 100px; height: 50px;" type="submit">See Predictions</button>
+    </form>
+</body>
+</html>
